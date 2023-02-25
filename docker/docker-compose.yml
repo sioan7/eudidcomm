@@ -1,0 +1,13 @@
+version: "3.7"
+
+# not working yet
+
+networks:
+  default:
+    name: eudidcomm
+
+services:
+  did-key-resolver:
+    image: universalresolver/driver-did-key
+    ports:
+      - "8095:8080"
